@@ -14,14 +14,15 @@ const sequelize = new Sequelize (
             acquire: dbConfig.pool.acquire,
             idle: dbConfig.pool.idle
         }
-    });
+    }
+);
 
-    const db = {};
+const db = {};
 
-    db.Sequelize = Sequelize;
-    db.sequelize = sequelize;
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
 
-    // db.livro = require("./livro.model")(sequelize, Sequelize);
-    // db.locatario = require("./locatario.model")(sequelize, Sequelize);
+db.livro = require("./livro.model")(sequelize, Sequelize);
+db.locatario = require("./locatario.model")(sequelize, Sequelize);
 
-    module.exports = db;
+module.exports = db;
