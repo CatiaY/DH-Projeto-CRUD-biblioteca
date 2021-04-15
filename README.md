@@ -1,6 +1,8 @@
-# Sistema de gerenciador de livros
+# Sistema gerenciador de livros
 
 Sistema de CRUD para cadastro de livros e usuários criado na aula da Digital House, com Node Express, Mysql2 e Sequelize.
+
+Obs.: Modificar configurações do banco de dados no arquivo db.config.js
 
 ## Funções:
 - Cadastrar livros
