@@ -10,12 +10,12 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         dataLancamento: {
-            type: Sequelize.DATE
+            type: Sequelize.DATEONLY
         },
         dataAluguel: {
-            type: Sequelize.DATE
+            type: Sequelize.DATEONLY
         },
-        status: {
+        disponivel: {
             type: Sequelize.BOOLEAN
         }
     });

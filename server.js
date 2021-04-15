@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
 
 db.sequelize.sync();
 
-// require("./app/routes/livro.routes")(app);
-// require("./app/routes/locatario.routes")(app);
+require("./app/routes/livro.routes")(app);
+require("./app/routes/locatario.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
